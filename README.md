@@ -1,7 +1,9 @@
+---
 
 # 🧠 Sentiment Analysis on Amazon Reviews using Machine Learning
 
 A machine learning project that classifies Amazon product reviews into **positive**, **negative**, or **neutral** sentiments using classical ML algorithms and feature extraction techniques.
+This project identifies the best-performing model for sentiment classification by evaluating multiple algorithms with different text vectorization methods.
 
 ---
 
@@ -15,16 +17,16 @@ This analysis provides valuable insights into customer opinions, helping e-comme
 
 ## 🚀 Features
 
-* ✅ Data preprocessing and cleaning of raw Amazon review data
+* ✅ Preprocessing and cleaning of raw Amazon review data
 * 🧩 Feature extraction using **CountVectorizer** and **TF-IDF Vectorizer**
-* ⚙️ Model training using multiple ML algorithms:
+* ⚙️ Model training with multiple ML algorithms:
 
   * Naive Bayes
   * Logistic Regression
   * Random Forest
   * Support Vector Machine (SVM)
 * 🎯 Hyperparameter tuning using **RandomizedSearchCV** and **Nu-SVM**
-* 📈 Model evaluation using accuracy, precision, recall, and F1-score
+* 📈 Evaluation using accuracy, precision, recall, and F1-score
 * 📊 Visualization with confusion matrices and sentiment distribution charts
 
 ---
@@ -52,21 +54,21 @@ data/amazon_reviews.csv
 
 ## 🧩 Methodology
 
-1. **Data Collection:** Downloaded the Amazon reviews dataset from Kaggle.
+1. **Data Collection:** Downloaded Amazon product reviews dataset from Kaggle.
 2. **Preprocessing:**
 
-   * Handled missing values.
-   * Combined `review_title` and `review_text` into one column.
+   * Handled missing values
+   * Combined `review_title` and `review_text` into one column
    * Labeled sentiments based on ratings:
 
      * ⭐ 4–5 → Positive
      * ⭐ 3 → Neutral
      * ⭐ 1–2 → Negative
-3. **Feature Extraction:** Applied CountVectorizer and TF-IDF to convert text into numerical form.
+3. **Feature Extraction:** Applied **CountVectorizer** and **TF-IDF** to convert text into numerical form.
 4. **Model Training:** Trained multiple classifiers — Naive Bayes, Logistic Regression, Random Forest, and SVM.
-5. **Evaluation:** Compared all models using accuracy, precision, recall, and F1-score.
-6. **Fine-Tuning:** Optimized Random Forest using RandomizedSearchCV and SVM with Nu-SVM.
-7. **Visualization:** Plotted sentiment distribution and confusion matrices for analysis.
+5. **Evaluation:** Compared models using accuracy, precision, recall, and F1-score.
+6. **Fine-Tuning:** Optimized Random Forest using **RandomizedSearchCV** and SVM using **Nu-SVM**.
+7. **Visualization:** Plotted sentiment distribution and confusion matrices for better understanding.
 
 ---
 
@@ -81,7 +83,7 @@ data/amazon_reviews.csv
 | **Random Forest**   | **93%**  | Neutral (1.0)   | Positive (1.0) | Positive (0.96) |
 | **SVM**             | **93%**  | Negative (0.96) | Positive (1.0) | Positive (0.96) |
 
-> ✅ **Observation:** Both **Random Forest** and **SVM** achieved the **highest accuracy of 93%** using the **CountVectorizer** approach, outperforming Naive Bayes and Logistic Regression.
+> ✅ **Observation:** Both **Random Forest** and **SVM** achieved the **highest accuracy of 93%** using the **CountVectorizer**, outperforming Naive Bayes and Logistic Regression.
 
 ---
 
@@ -94,7 +96,7 @@ data/amazon_reviews.csv
 | **Random Forest**   | **93%**  | Neutral (1.0)   | Positive (1.0)  | Positive (0.96) |
 | **SVM**             | **93%**  | Positive (0.95) | Positive (0.98) | Positive (0.97) |
 
-> ✅ **Observation:** Similarly, both **Random Forest** and **SVM** maintained the **same top accuracy (93%)** with the **TF-IDF Vectorizer**, showing consistent performance across feature extraction methods.
+> ✅ **Observation:** Similarly, both **Random Forest** and **SVM** achieved the **same top accuracy (93%)** using the **TF-IDF Vectorizer**, showing consistent performance across feature extraction methods.
 
 ---
 
@@ -111,27 +113,28 @@ data/amazon_reviews.csv
 
 ## 📚 Publication
 
-This project was **accepted for publication** at the
-🎓 *3rd World Conference on Information Systems for Business Management (ISBM)* — **Springer LNNS Series (2024)**.
+This project was **officially published** at the
+🎓 *3rd World Conference on Information Systems for Business Management (ISBM)* — **Springer LNNS Series (2024)**
 
-📖 [Springer Publication Link — Coming Soon]()
+📄 **Read the Published Paper:**
+[🔗 Sentiment Analysis on Amazon Reviews Using Machine Learning Techniques – ResearchGate](https://www.researchgate.net/publication/392245615_Sentiment_Analysis_on_Amazon_Reviews_Using_Machine_Learning_Techniques)
 
 ---
 
 ## 📌 Conclusion
 
-* Both **Random Forest** and **SVM** achieved **93% accuracy** across both CountVectorizer and TF-IDF vectorization methods.
-* Fine-tuning with **Nu-SVM** improved performance to **94%**, confirming it as the most efficient model.
-* This project demonstrates how **vectorization strategies** and **hyperparameter tuning** significantly influence model performance in sentiment analysis.
+* Both **Random Forest** and **SVM** achieved **93% accuracy** using both CountVectorizer and TF-IDF Vectorizer.
+* Fine-tuning with **Nu-SVM** improved performance to **94%**, confirming it as the **best-performing model**.
+* The project demonstrates how combining effective **vectorization** with **model optimization** can significantly boost sentiment classification accuracy.
 
 ---
 
 ## 🔮 Future Scope
 
-* 🤖 Integrate **deep learning models** like **LSTM** and **BERT** for contextual understanding.
-* 🌍 Expand the system for **multilingual** sentiment classification.
-* 🧭 Develop an **aspect-based sentiment analyzer** for more granular insights.
-* 💻 Build a **web interface or dashboard** for real-time sentiment tracking and visualization.
+* 🤖 Integrate **deep learning architectures** like **LSTM** and **BERT** for better contextual understanding.
+* 🌍 Expand sentiment classification to **multiple languages**.
+* 🧭 Implement **aspect-based sentiment analysis** to identify sentiments about specific product features.
+* 💻 Build a **real-time web application or dashboard** for live sentiment monitoring.
 
 ---
 
@@ -153,7 +156,4 @@ This project was **accepted for publication** at the
 ### ⭐ Don’t forget to star this repository if you found it helpful!
 
 ---
-
-Would you like me to make it even more **visually appealing** for GitHub (with shields/badges for Python, scikit-learn, license, etc.)? That helps your profile stand out even more to recruiters.
-
 

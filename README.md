@@ -1,13 +1,13 @@
 ---
 
-# 🧠 Sentiment Analysis on Amazon Reviews using Machine Learning
+#  Sentiment Analysis on Amazon Reviews using Machine Learning
 
 A machine learning project that classifies Amazon product reviews into **positive**, **negative**, or **neutral** sentiments using classical ML algorithms and feature extraction techniques.
 This project identifies the best-performing model for sentiment classification by evaluating multiple algorithms with different text vectorization methods.
 
 ---
 
-## 📖 Abstract
+##  Abstract
 
 In today’s digital era, customer feedback is a critical source of business intelligence. This project aims to **automate sentiment analysis** of Amazon product reviews using **machine learning techniques**.
 After experimenting with multiple classifiers and vectorization methods, the **Nu-SVM** model achieved the **highest accuracy of 94%**, proving to be the most effective for sentiment prediction.
@@ -15,23 +15,23 @@ This analysis provides valuable insights into customer opinions, helping e-comme
 
 ---
 
-## 🚀 Features
+##  Features
 
-* ✅ Preprocessing and cleaning of raw Amazon review data
-* 🧩 Feature extraction using **CountVectorizer** and **TF-IDF Vectorizer**
-* ⚙️ Model training with multiple ML algorithms:
+*  Preprocessing and cleaning of raw Amazon review data
+*  Feature extraction using **CountVectorizer** and **TF-IDF Vectorizer**
+*  Model training with multiple ML algorithms:
 
   * Naive Bayes
   * Logistic Regression
   * Random Forest
   * Support Vector Machine (SVM)
-* 🎯 Hyperparameter tuning using **RandomizedSearchCV** and **Nu-SVM**
-* 📈 Evaluation using accuracy, precision, recall, and F1-score
-* 📊 Visualization with confusion matrices and sentiment distribution charts
+*  Hyperparameter tuning using **RandomizedSearchCV** and **Nu-SVM**
+*  Evaluation using accuracy, precision, recall, and F1-score
+*  Visualization with confusion matrices and sentiment distribution charts
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Programming Language:** Python
 * **Libraries:** scikit-learn, pandas, NumPy, Matplotlib, Seaborn
@@ -39,7 +39,7 @@ This analysis provides valuable insights into customer opinions, helping e-comme
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 The dataset was sourced from **[Kaggle](https://www.kaggle.com/)** under the search term *“Amazon Reviews.”*
 Due to licensing restrictions, the dataset is **not included** in this repository.
@@ -52,7 +52,7 @@ data/amazon_reviews.csv
 
 ---
 
-## 🧩 Methodology
+##  Methodology
 
 1. **Data Collection:** Downloaded Amazon product reviews dataset from Kaggle.
 2. **Preprocessing:**
@@ -72,7 +72,7 @@ data/amazon_reviews.csv
 
 ---
 
-## 📊 Results & Model Comparison
+##  Results & Model Comparison
 
 ### 🔹 CountVectorizer Results
 
@@ -83,7 +83,7 @@ data/amazon_reviews.csv
 | **Random Forest**   | **93%**  | Neutral (1.0)   | Positive (1.0) | Positive (0.96) |
 | **SVM**             | **93%**  | Negative (0.96) | Positive (1.0) | Positive (0.96) |
 
-> ✅ **Observation:** Both **Random Forest** and **SVM** achieved the **highest accuracy of 93%** using the **CountVectorizer**, outperforming Naive Bayes and Logistic Regression.
+>  **Observation:** Both **Random Forest** and **SVM** achieved the **highest accuracy of 93%** using the **CountVectorizer**, outperforming Naive Bayes and Logistic Regression.
 
 ---
 
@@ -96,7 +96,7 @@ data/amazon_reviews.csv
 | **Random Forest**   | **93%**  | Neutral (1.0)   | Positive (1.0)  | Positive (0.96) |
 | **SVM**             | **93%**  | Positive (0.95) | Positive (0.98) | Positive (0.97) |
 
-> ✅ **Observation:** Similarly, both **Random Forest** and **SVM** achieved the **same top accuracy (93%)** using the **TF-IDF Vectorizer**, showing consistent performance across feature extraction methods.
+>  **Observation:** Similarly, both **Random Forest** and **SVM** achieved the **same top accuracy (93%)** using the **TF-IDF Vectorizer**, showing consistent performance across feature extraction methods.
 
 ---
 
@@ -105,23 +105,23 @@ data/amazon_reviews.csv
 | Algorithm             | Accuracy | Precision (Positive) | Recall (Positive) | F1-Score (Positive) |
 | --------------------- | -------- | -------------------- | ----------------- | ------------------- |
 | Random Forest (Tuned) | 90%      | 0.90                 | 1.0               | 0.95                |
-| 🏆 **Nu-SVM (Best)**  | **94%**  | **0.94**             | **0.99**          | **0.97**            |
+|  **Nu-SVM (Best)**  | **94%**  | **0.94**             | **0.99**          | **0.97**            |
 
-> 🧠 **Conclusion:** Both **Random Forest** and **SVM** performed equally well with 93% accuracy on both vectorizers, but after fine-tuning, **Nu-SVM** achieved the **highest accuracy of 94%**, making it the most effective model overall.
+>  **Conclusion:** Both **Random Forest** and **SVM** performed equally well with 93% accuracy on both vectorizers, but after fine-tuning, **Nu-SVM** achieved the **highest accuracy of 94%**, making it the most effective model overall.
 
 ---
 
-## 📚 Publication
+##  Publication
 
 This project was **officially published** at the
-🎓 *3rd World Conference on Information Systems for Business Management (ISBM)* — **Springer LNNS Series (2024)**
+ *3rd World Conference on Information Systems for Business Management (ISBM)* — **Springer LNNS Series (2024)**
 
-📄 **Read the Published Paper:**
+ **Read the Published Paper:**
 [🔗 Sentiment Analysis on Amazon Reviews Using Machine Learning Techniques – ResearchGate](https://www.researchgate.net/publication/392245615_Sentiment_Analysis_on_Amazon_Reviews_Using_Machine_Learning_Techniques)
 
 ---
 
-## 📌 Conclusion
+##  Conclusion
 
 * Both **Random Forest** and **SVM** achieved **93% accuracy** using both CountVectorizer and TF-IDF Vectorizer.
 * Fine-tuning with **Nu-SVM** improved performance to **94%**, confirming it as the **best-performing model**.
@@ -129,27 +129,26 @@ This project was **officially published** at the
 
 ---
 
-## 🔮 Future Scope
+##  Future Scope
 
-* 🤖 Integrate **deep learning architectures** like **LSTM** and **BERT** for better contextual understanding.
-* 🌍 Expand sentiment classification to **multiple languages**.
-* 🧭 Implement **aspect-based sentiment analysis** to identify sentiments about specific product features.
-* 💻 Build a **real-time web application or dashboard** for live sentiment monitoring.
-
----
-
-## 🙌 Contributors
-
-👩‍💻 **Neelakantamatam Shreya**
-👩‍💻 **Indukuri Varsha**
-👩‍💻 **Gottumukkala Kavya**
+*  Integrate **deep learning architectures** like **LSTM** and **BERT** for better contextual understanding.
+*  Expand sentiment classification to **multiple languages**.
+*  Implement **aspect-based sentiment analysis** to identify sentiments about specific product features.
+*  Build a **real-time web application or dashboard** for live sentiment monitoring.
 
 ---
 
-## 📬 Contact
+##  Contributors
 
-📧 **Email:** [shreyanm6@gmail.com](mailto:shreyanm6@gmail.com)
-🔗 **LinkedIn:** [linkedin.com/in/neelakantamatam-shreya](https://linkedin.com/in/neelakantamatam-shreya)
+ **Neelakantamatam Shreya**
+ **Indukuri Varsha**
+ **Gottumukkala Kavya**
+
+---
+
+##  Contact
+
+ **LinkedIn:** [linkedin.com/in/neelakantamatam-shreya](https://linkedin.com/in/neelakantamatam-shreya)
 
 ---
 
